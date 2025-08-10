@@ -29,14 +29,14 @@ public abstract class Hero {
     // Aqui vai servir para calcular o dano do ataque (cada classe faz do seu jeito)
     public abstract int attackDamage();
 
-    // Método pra "tomar dano" com segurança (aplico defesa e tiro da vida atual)
+    // Metodo pra "tomar dano" com segurança (aplico defesa e tiro da vida atual)
     public int takeDamage(int rawDamage) {
         int efetivo = Math.max(1, rawDamage - defense); // nunca menos que 1
         currentHp = Math.max(0, currentHp - efetivo);   // não deixo passar de 0
         return efetivo; // devolvo quanto realmente entrou
     }
 
-    // Diz se o herói ainda está de pé
+    // Diz se o herói ainda tá de pé
     public boolean isAlive() {
         return currentHp > 0;
     }

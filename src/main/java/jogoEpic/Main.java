@@ -2,14 +2,13 @@ package jogoEpic;
 
 public class Main {
     public static void main(String[] args) {
-        Hero h1 = HeroFactory.createRandomHero();
-        Hero h2 = HeroFactory.createRandomHero();
+        System.out.println("=== EPIC MINI 3x3 ===");
 
-        // evita que as classes sejam iguais
-        while (h1.getClazz().equals(h2.getClazz())) {
-            h2 = HeroFactory.createRandomHero();
-        }
+        Team t1 = Team.randomTeam("Time Azul");
+        Team t2 = Team.randomTeam("Time Vermelho");
 
-        new Battle().fight(h1, h2);
+        TeamBattle tb = new TeamBattle();
+        Team vencedor = tb.fight(t1, t2);          // <<< usa o retorno
+        System.out.println("\n>>> Vencedor: " + vencedor.getName());
     }
 }

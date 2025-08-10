@@ -1,15 +1,15 @@
 package jogoEpic;
 
-// Classe do guerreiro usando herança de hero
+// Classe do guerreiro, herda da classe base Hero
 public class Warrior extends Hero {
 
-    // aqui ja vai valores fixos de atributos da classe
-    public Warrior(String name) {
-        super(name, "Warrior", 15, 7, 120);
+    // Construtor usado pela fábrica (stars e stats definidos fora)
+    public Warrior(String name, int stars, int attack, int defense, int hp) {
+        super(name, "Warrior", stars, attack, defense, hp);
     }
 
 
-    // Warrior vai ter bônus fixo de +3 no ataque (independente de item)
+    // Cálculo do dano do guerreiro (bônus fixo de +3)
     @Override
     public int attackDamage() {
         return getAttack() + 3;
