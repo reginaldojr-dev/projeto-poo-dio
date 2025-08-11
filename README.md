@@ -5,7 +5,7 @@ Um mini-jogo inspirado em *Epic Seven* para treinar os pilares de Programação 
 Times 3×3 são gerados aleatoriamente (classe + estrelas + nome) e batalham em turnos alternados.
 
 > **Mensagem pessoal**  
-> Eu curto muito jogos e estou começando agora na programação — descobrir que posso criar coisas incríveis por conta própria tem sido demais!  
+> Curto muito jogos e estou começando agora na programação — descobrir que posso criar coisas incríveis por conta própria tem sido demais!  
 > Este projeto foi maravilhoso de fazer e quero melhorá-lo sempre, adicionando novas funcionalidades e aprendendo no processo. 
 
 ---
